@@ -9,7 +9,7 @@ const Sketch = dynamic(() => import('react-p5').then((mod) => mod.default), {
 let x = 50;
 let y = 50;
 
-export default (props) => {
+export default function App (props) {
 	const setup = (p5, canvasParentRef) => {
 		p5.createCanvas(500, 500).parent(canvasParentRef);
 	};
