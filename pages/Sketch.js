@@ -13,12 +13,10 @@ let wh =0
 
 export default function App (props) {
 
-  useEffect(() => {
-        wh=window.innerWidth
-  },[])
+ 
 
 	const setup = (p5, canvasParentRef) => {
-		p5.createCanvas(wh, 200).parent(canvasParentRef);
+		p5.createCanvas(1000, 200).parent(canvasParentRef);
 	};
 
 	const draw = (p5) => {
