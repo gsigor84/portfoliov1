@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import Bio from './bio.js'
-import Sketch from './sketch.js';
+import Sketch from './Sketch.js';
 import Grid from '@mui/material/Grid';
 
 
