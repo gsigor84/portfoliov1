@@ -1,6 +1,6 @@
 import Box from '@mui/material/Box';
 import Bio from './bio.js'
-
+import Sketch from './sketch.js';
 import Grid from '@mui/material/Grid';
 
 
@@ -23,7 +23,7 @@ className="fullscreen"
 
 <Grid item xs={12} md={12}  >
 <Bio/>
-
+<Sketch/>
 </Grid>
 
 
