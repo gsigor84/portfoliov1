@@ -13,10 +13,12 @@ let wh =0
 
 export default function App (props) {
 
- 
+  useEffect(() => {
+    wh =window.innerWidth  
+  },[])
 
 	const setup = (p5, canvasParentRef) => {
-		p5.createCanvas(1000, 200).parent(canvasParentRef);
+		p5.createCanvas(1400, 200).parent(canvasParentRef);
 	};
 
 	const draw = (p5) => {
@@ -25,20 +27,32 @@ export default function App (props) {
 
 
 
-    p5.noStroke();
-    p5.point(0, 0);
-    p5.point(100, 80);
-    p5.point(200, 0);
-    p5.point(300, 50);
-    p5.fill('#D9043D')
-    p5.bezier(0, 0, 100, 80, 200, 0, 300, 0);
 
-   
-    p5.point(300, 0);
-    p5.point(400, 80);
-    p5.point(500, 0);
-    p5.point(600, 0);
-    p5.bezier(310, 0, 600, 90, 600, 0, 750, 0);
+    p5.fill('#D9043D')
+    p5.noStroke();
+      let x1 = 0,
+      x2 = 30,
+      x3 = 80,
+      x4 =400;
+     let y1 =0,
+      y2 = 20,
+      y3 = 100,
+      y4 =0;
+ p5.bezier(x1, y1, x2, y2, x3, y3, x4, y4);
+ 
+let steps = 10;
+for (let i = 0; i <= steps; i++) {
+  let t = i / steps;
+  let x =   p5.bezierPoint(x1, x2, x3, x4, t);
+  let y =   p5.bezierPoint(y1, y2, y3, y4, t);
+ 
+
+
+
+
+}
+
+  
   
   
     

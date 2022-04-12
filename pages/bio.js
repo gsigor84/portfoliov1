@@ -22,7 +22,7 @@ return(
    className='bioBox'
  >
         <Grid item xs={12} md={6} sx={{margin:'2%'}}>
-          <div style={{backgroundColor:'#D9043D',padding:'6%',borderRadius: 10}}>
+          <div style={{backgroundColor:'#D9043D',paddingInline:'2%',borderRadius: 10}}>
         <span style={{fontSize:'60px', lineHeight:1,color:'white' }}className='subTitle1' >
   Welcome to my Portfolio 
 </span>

@@ -1,35 +1,33 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 html,
 body {
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI,Public Sans, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans,Lato, Helvetica Neue, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Public Sans, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Lato, Helvetica Neue,
+    sans-serif;
 }
-.layoutBox{
-  display: flex;
-  justify-Content: center;
-   align-Items: center;
-}
-.fullscreen {
-
-  width: 100vw;
-}
-
-.gridA{
+.layoutBox {
   display: flex;
   justify-content: center;
   align-items: center;
- 
+}
+.fullscreen {
+  width: 100vw;
 }
 
-.avatar{
-
-   filter: opacity(80%);
-  
+.gridA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.avatarDiv{
+
+.avatar {
+  filter: opacity(80%);
+}
+.avatarDiv {
   margin: 0;
   position: relative;
   top: 50%;
@@ -40,69 +38,62 @@ a {
   color: inherit;
   text-decoration: none;
 }
-.subTitle1{
-  font-family: 'Inter', sans-serif;
+.subTitle1 {
+  font-family: "Inter", sans-serif;
   font-weight: 700;
-
 }
-.p1{
-  font-family: 'Lato', sans-serif;
+.p1 {
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   color: white;
 }
 
-.svg{
+.svg {
   display: block;
   margin-left: auto;
   margin-right: auto;
-
 }
-.svg2{
-
-  top:180px;
+.svg2 {
+  top: 180px;
   z-index: 2;
   position: relative;
 }
-.svg3{
-
-  height:40vh;
-  width:30vw;
+.svg3 {
+  height: 40vh;
+  width: 30vw;
   z-index: 1;
   position: relative;
- left:-50%;
- top:-50px;
- 
- 
+  left: -50%;
+  top: -50px;
 }
 
-.slider{
+.slider {
   position: relative;
   width: 100%;
   justify-content: center;
   align-items: center;
-  display:block
+  display: block;
 }
 
-
-.right-arrow{
+.right-arrow {
   position: absolute;
-  top:50%;
+  top: 50%;
   right: 32px;
   z-index: 10;
   cursor: pointer;
   user-select: none;
 }
 
-.left-arrow{
+.left-arrow {
   position: absolute;
-  top:50%;
-  left:32px;
+  top: 50%;
+  left: 32px;
   z-index: 10;
   cursor: pointer;
   user-select: none;
 }
 
-.img{
+.img {
   object-fit: contain;
   position: relative !important;
   height: unset !important;
@@ -112,7 +103,6 @@ a {
   box-sizing: border-box;
 }
 
-
 .image {
   width: 20%;
   height: 50%;
@@ -120,18 +110,18 @@ a {
   object-fit: cover;
 }
 .arrowStyle {
-  border : "solid red";
-  border-width : "0 5px 5px 0"
+  border: "solid red";
+  border-width: "0 5px 5px 0";
 }
-.biosub{
-  font-family: 'Inter', sans-serif;
+.biosub {
+  font-family: "Inter", sans-serif;
   font-weight: 700;
   color: white;
   font-size: 20px;
   vertical-align: text-top;
 }
-.bio{
-  font-family: 'Lato', sans-serif;
+.bio {
+  font-family: "Lato", sans-serif;
   font-weight: 700;
   color: white;
   font-size: 12px;
@@ -139,104 +129,98 @@ a {
 }
 .bioBox {
   width: 100vw;
-  background-color: '#D9043D';
+  background-color: "#D9043D";
 }
-.workBox{
-  width: 100vw
-}
-.blogBox{
-  width: 100vw
-}
-.formBox{
-  width: 100vw
-}
-.knowBox{
+.workBox {
   width: 100vw;
-  padding:10%;
- 
 }
-.textBox{
-  padding-Top:'2%';
+.blogBox {
+  width: 100vw;
+}
+.formBox {
+  width: 100vw;
+}
+.knowBox {
+  width: 100vw;
+  padding: 10%;
+}
+.textBox {
+  padding-top: "2%";
   width: 900px;
 }
-.courses{
-  height:400px;
+.courses {
+  height: 400px;
 
-margin-top: 5%;
+  margin-top: 5%;
 }
-.backImage{
-  background-Color:'black';
-  width:100vw;
-  height:70vh;
+.backImage {
+  background-color: "black";
+  width: 100vw;
+  height: 70vh;
   background-repeat: no-repeat;
   background-size: 100% auto;
- 
-
 }
 @media only screen and (max-width: 600px) {
-.card{
-  margin-block: 2%;
-}
-  .layoutBox{
+  .card {
+    margin-block: 2%;
+  }
+  .layoutBox {
     overflow-x: hidden;
-     margin: auto;
-     clear:both;
-     overflow-y: hidden;
+    margin: auto;
+    clear: both;
+    overflow-y: hidden;
   }
-  
-  .bioBox {
-    width:100vw;
 
+  .bioBox {
+    width: 100vw;
   }
-  .workBox{
+  .workBox {
     width: 90vw;
-   
   }
-  .workIn{ 
-    width:100vw;
+  .workIn {
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
-  .formBox{
-    width:90vw;
-    display: flex;
-    justify-Content: center;
-     align-Items: center;
-     margin-inline: 4%;
-  }
-  .knowBox{
-    width: 100vw;
-  height: 100vh;
-  }
-  .svg3{
 
-    height:50vh;
-    width:90vw;
+  .formBox {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 4%;
+  }
+  .knowBox {
+    width: 100vw;
+    height: 100vh;
+  }
+  .svg3 {
+    height: 50vh;
+    width: 90vw;
     z-index: 1;
     position: relative;
-   left:-20%;
-   top:-35px;
-  }.textBox{
-    padding-Top:'2%';
+    left: -20%;
+    top: -35px;
+  }
+  .textBox {
+    padding-top: "2%";
     width: 300px;
   }
-  .svg2{
+  .svg2 {
     position: relative;
   }
-  .backwork{
+  .backwork {
     height: 500px;
     width: 90%;
   }
-  .avatarDiv{
-     margin-bottom:50px;
-     left: 25%;
-     position: relative;
+  .avatarDiv {
+    margin-bottom: 50px;
+    left: 25%;
+    position: relative;
   }
-  .courses{
-    margin-bottom:80px;
-margin-top: 60px;
+  .courses {
+    margin-bottom: 80px;
+    margin-top: 60px;
   }
-
 }
