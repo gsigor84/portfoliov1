@@ -1,0 +1,7 @@
+if(currentTime %2 ==0){
+  p5.fill(255);
+p5.text(currentTime,50,50)
+}else{
+  p5.fill('#D9043D');
+  p5.text(currentTime,50,50)
+}

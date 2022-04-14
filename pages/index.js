@@ -1,18 +1,14 @@
-import Box from '@mui/material/Box';
 import Bio from './bio.js'
-import Sketch from './Sketch.js';
 import Grid from '@mui/material/Grid';
+import Form from './form'
 
 
 
 
 
 export default function Home() {
-
-
   return (
 
-  
 
 <Grid container 
  direction="row"
@@ -23,13 +19,13 @@ className="fullscreen"
 
 <Grid item xs={12} md={12}  >
 <Bio/>
-<Sketch/>
+
 </Grid>
 
 
 
 <Grid item xs={12} md={12} sx={{marginTop:'10%'}}  >
-
+<Form/>
 </Grid>
 
  <Grid item xs={12} md={12}    >      
@@ -38,12 +34,6 @@ className="fullscreen"
 
 
 
-<Grid item xs={12} md={12} >
-
-</Grid>
-<Grid item xs={12} md={12} sx={{marginTop:'5%'}}    >
-
-</Grid>
 </Grid>
 
 

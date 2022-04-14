@@ -1,11 +1,14 @@
 import '../styles/globals.css'
 import Layout from "../components/LayoutModule"
+import NavModule from '../components/NavModule'
 
 
 function MyApp({ Component, pageProps }) {
   return (
     <Layout>
+  
   <Component {...pageProps} />
+
   </Layout>
   )
   }

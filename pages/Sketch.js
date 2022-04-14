@@ -18,16 +18,11 @@ export default function App (props) {
   },[])
 
 	const setup = (p5, canvasParentRef) => {
-		p5.createCanvas(1400, 200).parent(canvasParentRef);
+		p5.createCanvas(wh, 150).parent(canvasParentRef);
 	};
 
 	const draw = (p5) => {
     
-  
-
-
-
-
     p5.fill('#D9043D')
     p5.noStroke();
       let x1 = 0,

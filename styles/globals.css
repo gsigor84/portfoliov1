@@ -160,6 +160,10 @@ a {
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
+.tcenter {
+  display: flex;
+  justify-content: center;
+}
 @media only screen and (max-width: 600px) {
   .card {
     margin-block: 2%;
