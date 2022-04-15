@@ -1,7 +1,7 @@
 import Bio from './bio.js'
 import Grid from '@mui/material/Grid';
 import Form from './form'
-
+import Animation2  from './Animation2';
 
 
 
@@ -25,6 +25,8 @@ className="fullscreen"
 
 
 <Grid item xs={12} md={12} sx={{marginTop:'10%'}}  >
+
+
 <Form/>
 </Grid>
 

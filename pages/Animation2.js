@@ -29,48 +29,13 @@ export default function App (props) {
 	};
 
 	const draw = (p5) => {
-    let ht = p5.height
-    let date = moment().format("D MMM YYYY")
-let time = moment().format("HH:mm:ss")
-let sec = moment().format("ss")
- p5.background('#04BF8A');
- p5.scale(-1.0,1.0);
-    p5.stroke(255);
-    p5.strokeWeight(20);
-    p5.line(x-30, y,x+ 130,ht);
-    p5.line(x+200, y,x+ 10+300,x+2+ ht);
-    p5.line(x+600, y, x+10+900,x+1* ht);
-   
-    if(goLeft==false){
 
-      x=x+0.09;
-    }
-    if(goLeft==true){
-      x=x-0.09;
-    }
-
-if(x>p5.width){
-  goLeft=true;
-}
-
- p5.noStroke(255);
-    p5.fill(0);
-    p5.textSize(fontSize);
-    p5.text('MAKE', p5.width-600, 100)
-    p5.text('- DESIGN BETTER', p5.width-600, 160)
-    p5.textSize(20);
-    p5.text(date, p5.width-600, 200)
-    
-  
-    if(sec % 2 == 0) {
-      p5.fill(255);
-      p5.text(time, p5.width-600, 225)
-      
-  }else{
-    p5.fill(0);
-      p5.text(time, p5.width-600, 225)
-  }
-
+    p5.clear();
+    p5.background(200);
+    p5.squareColor = p5.color(100, 50, 100);
+    p5.squareColor.setAlpha(128 + 128 * p5.sin(p5.millis() / 1000));
+    p5.fill(p5.squareColor);
+    p5.rect(13, 13, p5.width - 26, p5.height - 26);
 
    
 	};

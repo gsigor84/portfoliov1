@@ -35,54 +35,28 @@ export default function App (props) {
 
     for(var i=1 ,j=0;i <8, j < 7;i++,j++){
  
-      if(i% 2 == 0  ){
+    
 
-if(sec <30 ){
-  p5.noFill();
-  let stroke = i+1
-  p5.strokeWeight(stroke);
-  p5.stroke('#04BF8A')
-  p5.square(x/i, y/i, i*55,i*0);
-  p5.fill('#04BF8A');
-  p5.noStroke(0)
-  p5.textSize(fontSize+i*5);
-  p5.text('P5.js',a+j*42+15, b+j*53);
 
-  
 
-}else{
-
-  p5.noFill();
-  let stroke = i+1
-  p5.strokeWeight(stroke);
-  p5.stroke(255)
-  p5.square(x/i, y/i, i*55,i*0);
-  p5.fill(255);
-  p5.strokeWeight(0)
-  p5.textSize(fontSize+i*5);
-  p5.text('P5.js',a+j*42+15, b+j*53);
-
-  
-}
-     
-
-      }else{
         p5.noFill();
         let stroke = i+1
         p5.strokeWeight(stroke);
         p5.stroke(255)
+        p5.squareColor = p5.color('#0597F2');
+    p5.squareColor.setAlpha(128 + 150 * p5.sin(p5.millis() / 1500));
+    p5.fill(p5.squareColor);
         p5.square(x/i, y/i, i*55,i*0);
         p5.fill(255);
         p5.strokeWeight(0)
         p5.textSize(fontSize+i*5);
         p5.text('P5.js',a+j*42+15, b+j*53);
-        
-      }
+      
+    }
+      
   
 
-
-
-    }
+    
       
 	};
 
