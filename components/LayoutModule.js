@@ -16,7 +16,7 @@ export default function Layout({children}) {
        </Head>
     <NavModule/>
     {children}
-    <Footer/>
+    <Footer />
 </div>
    
 

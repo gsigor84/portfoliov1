@@ -36,6 +36,7 @@ export default function App (props) {
     for(var i=1 ,j=0;i <8, j < 7;i++,j++){
  
       if(i% 2 == 0  ){
+
 if(sec % 2 == 0 ){
   p5.noFill();
   let stroke = i+1
@@ -49,6 +50,9 @@ if(sec % 2 == 0 ){
 
   
 
+}else{
+
+  
 }
      
 
@@ -56,16 +60,18 @@ if(sec % 2 == 0 ){
         p5.noFill();
         let stroke = i+1
         p5.strokeWeight(stroke);
-        p5.stroke('#F2A81D')
+        p5.stroke(255)
         p5.square(x/i, y/i, i*55,i*0);
-        p5.fill('#F2A81D');
+        p5.fill(255);
         p5.strokeWeight(0)
         p5.textSize(fontSize+i*5);
         p5.text('P5.js',a+j*42+15, b+j*53);
         
       }
   
- 
+
+
+
     }
       
 	};

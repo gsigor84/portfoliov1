@@ -1,7 +1,26 @@
-if(currentTime %2 ==0){
-  p5.fill(255);
-p5.text(currentTime,50,50)
-}else{
-  p5.fill('#D9043D');
-  p5.text(currentTime,50,50)
-}
+ <Grid item xs={12} md={3} sx={{textAlign:'center'}}>
+          <SchoolIcon sx={{fontSize:'80px'}}/>
+    
+        </Grid>
+        <Grid  item xs={12} md={3} sx={{textAlign:'center'}}>
+        <GroupAddIcon  sx={{fontSize:'80px'}}/>
+        </Grid>
+        <Grid  item xs={12} md={3} sx={{textAlign:'center'}}>
+       <AccessAlarmIcon sx={{fontSize:'80px'}} />
+        </Grid>
+        <Grid  item xs={12} md={3} sx={{textAlign:'center'}}>
+         4
+        </Grid>
+        <Grid item xs={12} md={3} sx={{textAlign:'center'}}>
+         <span style={{fontSize:'12px'}}>love for learning</span> 
+    
+        </Grid>
+        <Grid  item xs={12} md={3} sx={{textAlign:'center'}}>
+        <span style={{fontSize:'12px'}}>There's no 'I' in team!</span> 
+        </Grid>
+        <Grid  item xs={12} md={3}sx={{textAlign:'center'}}>
+        <span style={{fontSize:'12px'}}>Tracking time</span> 
+        </Grid>
+        <Grid  item xs={12} md={3} sx={{textAlign:'center'}}>
+         4
+        </Grid>

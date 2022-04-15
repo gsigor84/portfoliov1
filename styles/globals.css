@@ -9,30 +9,6 @@ body {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Lato, Helvetica Neue,
     sans-serif;
 }
-.layoutBox {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.fullscreen {
-  width: 100vw;
-}
-
-.gridA {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.avatar {
-  filter: opacity(80%);
-}
-.avatarDiv {
-  margin: 0;
-  position: relative;
-  top: 50%;
-  left: 30%;
-}
 
 a {
   color: inherit;
@@ -42,189 +18,21 @@ a {
   font-family: "Inter", sans-serif;
   font-weight: 700;
 }
-.p1 {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  color: white;
-}
-
-.svg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-.svg2 {
-  top: 180px;
-  z-index: 2;
-  position: relative;
-}
-.svg3 {
-  height: 40vh;
-  width: 30vw;
-  z-index: 1;
-  position: relative;
-  left: -50%;
-  top: -50px;
-}
-
-.slider {
-  position: relative;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  display: block;
-}
-
-.right-arrow {
-  position: absolute;
-  top: 50%;
-  right: 32px;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.left-arrow {
-  position: absolute;
-  top: 50%;
-  left: 32px;
-  z-index: 10;
-  cursor: pointer;
-  user-select: none;
-}
-
-.img {
-  object-fit: contain;
-  position: relative !important;
-  height: unset !important;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.image {
-  width: 20%;
-  height: 50%;
-  position: relative !important;
-  object-fit: cover;
-}
-.arrowStyle {
-  border: "solid red";
-  border-width: "0 5px 5px 0";
-}
-.biosub {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  color: white;
-  font-size: 20px;
-  vertical-align: text-top;
-}
-.bio {
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  color: white;
-  font-size: 12px;
-  vertical-align: text-top;
-}
 .bioBox {
-  width: 100vw;
-  background-color: "#D9043D";
-}
-.workBox {
-  width: 100vw;
-}
-.blogBox {
-  width: 100vw;
-}
-.formBox {
-  width: 100vw;
-}
-.knowBox {
-  width: 100vw;
-  padding: 10%;
-}
-.textBox {
-  padding-top: "2%";
-  width: 900px;
-}
-.courses {
-  height: 400px;
-
-  margin-top: 5%;
-}
-.backImage {
-  background-color: "black";
-  width: 100vw;
-  height: 70vh;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-color: #05aff2;
+  color: white;
+  padding: 4%;
+  height: 100%;
 }
 .tcenter {
   display: flex;
   justify-content: center;
 }
 @media only screen and (max-width: 600px) {
-  .card {
-    margin-block: 2%;
-  }
-  .layoutBox {
-    overflow-x: hidden;
-    margin: auto;
-    clear: both;
-    overflow-y: hidden;
-  }
-
   .bioBox {
-    width: 100vw;
-  }
-  .workBox {
-    width: 90vw;
-  }
-  .workIn {
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .formBox {
-    width: 90vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-inline: 4%;
-  }
-  .knowBox {
-    width: 100vw;
-    height: 100vh;
-  }
-  .svg3 {
-    height: 50vh;
-    width: 90vw;
-    z-index: 1;
-    position: relative;
-    left: -20%;
-    top: -35px;
-  }
-  .textBox {
-    padding-top: "2%";
-    width: 300px;
-  }
-  .svg2 {
-    position: relative;
-  }
-  .backwork {
-    height: 500px;
-    width: 90%;
-  }
-  .avatarDiv {
-    margin-bottom: 50px;
-    left: 25%;
-    position: relative;
-  }
-  .courses {
-    margin-bottom: 80px;
-    margin-top: 60px;
+    background-color: black;
+    color: white;
+    padding: 4%;
+    height: 100%;
   }
 }

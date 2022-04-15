@@ -2,14 +2,14 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import TextField from '@mui/material/TextField';
-import emailjs from '@emailjs/browser';
+import emailjs from 'emailjs-com';
 import Button from '@mui/material/Button';
 
 
 export default function Form() {
 
 
-    const sendEmail = (e) => {
+    function sendEmail (e) {
       e.preventDefault();
       emailjs.sendForm('service_d4444hv', 'template_zor9k67',e.target, 'user_1SCe42Na5df2ul4XXc4nV')
         .then((result) => {
@@ -84,7 +84,7 @@ fullWidth
 
 <Box style={{paddingTop:'2%',}} >
 
-<Button value="Submit"  style={{backgroundColor:'black',borderRadius: 5,color:'#F2F2F2',marginBlock:'2%'}}>
+<Button value="Submit" type='submit'  style={{backgroundColor:'black',borderRadius: 5,color:'#F2F2F2',marginBlock:'2%'}} >
 Submit
 </Button>
 
