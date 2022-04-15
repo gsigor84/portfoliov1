@@ -14,7 +14,7 @@ export default function Bio() {
 
 
 return(
-  <Box sx={{ flexGrow: 1,backgroundColor:'#04BF8A' }}>
+  <Box sx={{ flexGrow: 1,backgroundColor:'#0597F2' }}>
  <Grid container 
 
 direction="row"
@@ -37,7 +37,7 @@ Strong ability to work as part of a team.
 
 
 
-<Link href="/contact"  passHref >
+<Link href="/bio2"  passHref >
 <Button  style={{backgroundColor:'white',borderRadius: 5,color:'black',marginBlock:'4%'}}>More information</Button>
 </Link>
 </div>

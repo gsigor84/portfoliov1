@@ -21,9 +21,12 @@ function NavModule() {
 <Link  href="/bio2">
 <Button  style={{backgroundColor:'#05AFF2',borderRadius: 5,color:'white',marginInline:'1%'}}>BIO</Button>
 </Link>
+<Link  href="/work">
 <Button  style={{backgroundColor:'#04BF8A',borderRadius: 5,color:'white',marginInline:'1%'}}>WORK</Button> 
+</Link>
+<Link  href="/blog">
 <Button  style={{backgroundColor:'#F2BD1D',borderRadius: 5,color:'white',marginInline:'1%'}}>BLOG</Button>   
-  
+</Link>
   </Grid>
 
 
