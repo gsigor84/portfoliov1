@@ -66,7 +66,7 @@ function bio2() {
     
         </Grid>
         <Grid item xs={12} md={3} sx={{textAlign:'center'}}>
-         <span style={{fontSize:'12px'}}>There's no 'I' in team!</span> 
+         <span style={{fontSize:'12px'}}>There is no I in team!</span> 
     
         </Grid>
 
