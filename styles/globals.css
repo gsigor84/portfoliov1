@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Urbanist:wght@100;400;900&display=swap");
 html,
 body {
   overflow-x: hidden;
@@ -10,13 +11,47 @@ body {
     sans-serif;
 }
 
+.thin {
+  font-family: "Urbanist", sans-serif;
+  font-weight: 100;
+}
+.boxBackG {
+  background-image: url("https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2344&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  height: 60vh;
+  width: 100%;
+}
 a {
-  color: inherit;
   text-decoration: none;
 }
+.boxBackG2 {
+  background-image: url("https://images.unsplash.com/photo-1424298397478-4bd87a6a0f0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.4;
+  display: block;
+  position: absolute;
+  background-position: 2% 98%;
+  z-index: -2;
+  top: 0;
+  height: 15vh;
+  width: 100%;
+}
 .subTitle1 {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
+  font-family: "Inter";
+  font-weight: 200;
+  letter-spacing: 1px;
+}
+.subTitle2 {
+  font-family: "Inter";
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 .bioBox {
   background-color: #05aff2;
@@ -28,11 +63,171 @@ a {
   display: flex;
   justify-content: center;
 }
+.button-1 {
+  align-items: center;
+  margin-inline: 1%;
+  border: 1px solid #000;
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 2px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+.button-n:hover {
+  align-items: center;
+  margin-inline: 1%;
+
+  position: relative;
+  box-sizing: border-box;
+  color: #bfbfbf;
+  cursor: pointer;
+  display: inline-flex;
+  fill: black;
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 2px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-n {
+  align-items: center;
+  margin-inline: 1%;
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: "Urbanist", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 2px;
+  min-width: 140px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-2 {
+  margin-block: 4%;
+  align-items: center;
+  background-color: #fff;
+  position: relative;
+  box-sizing: border-box;
+  color: #000;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  min-width: 160px;
+  outline: 0;
+  padding: 0 17px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.logo {
+  margin-inline: 12%;
+  font-family: "Lato";
+  font-size: 30px;
+  font-weight: 900;
+  color: #0d0d0d;
+}
+
+.button-59:focus {
+  color: #171e29;
+}
+.BurgerGrid {
+  display: none;
+}
+.FooterDiv {
+  background-color: #d9d9d9;
+  height: 300px;
+}
+
 @media only screen and (max-width: 600px) {
+  .BurgerGrid {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 4%;
+  }
+
+  .NavGrid {
+    display: none;
+  }
+  .boxBackG {
+    height: 600px;
+  }
   .bioBox {
     background-color: black;
     color: white;
     padding: 4%;
     height: 100%;
+  }
+  .BioContainer {
+    height: 400px;
+  }
+  .BioBox1 {
+    height: 200px;
+  }
+  .PurposeContainer {
+    padding-block: 8%;
+  }
+  .FormContainer {
+    padding-top: 8%;
+  }
+  .FormPadding {
+    margin: 4%;
+  }
+  .FooterDiv {
+    background-color: #d9d9d9;
+    height: 450px;
   }
 }

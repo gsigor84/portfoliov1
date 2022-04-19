@@ -23,17 +23,17 @@ export default function Form() {
 
     return(
 
-        <Box sx={{ flexGrow: 1 }} >
+        <Box sx={{ flexGrow: 1 }} className='FormPadding' >
             <Grid container 
              direction="column"
              justifyContent="center"
              alignItems="center"
             spacing={2} 
             className='formBox'
-            sx={{margin:'2%',paddingBottom:'6%'}}
+            sx={{paddingBlock:'6%'}}
             >
  
-  <Grid item xs={12} style={{paddingBottom:'2%',borderRadius: 10}} >
+  <Grid item xs={12}  >
   <form onSubmit={sendEmail}>
   <Typography variant="h4" component="div" className='subTitle1' style={{color:'black'}}>
 Looking for help with Web Development?
@@ -84,7 +84,7 @@ fullWidth
 
 <Box style={{paddingTop:'2%',}} >
 
-<Button value="Submit" type='submit'  style={{backgroundColor:'black',borderRadius: 5,color:'#F2F2F2',marginBlock:'2%'}} >
+<Button value="Submit" type='submit'  className='button-1' >
 Submit
 </Button>
 

@@ -1,8 +1,26 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Grid from '@mui/material/Grid';
-import Button from '@mui/material/Button';
 import Link from 'next/link'
+import MenuIcon from '@mui/icons-material/Menu';
 function NavModule() {
+
+
+  const [back, setBack] = useState('');
+  const [css, setcss] = useState('');
+
+  useEffect(() => {
+  
+    const win =window.location.pathname
+      setBack(win);
+      handleClick();
+    
+  },[setBack,handleClick]);
+
+function handleClick(){
+  const win =window.location.pathname
+  return setBack(win);
+}
+
   return (
    
 <Grid
@@ -10,28 +28,52 @@ function NavModule() {
   direction="row"
   justifyContent="flex-end"
   alignItems="center"
-  sx={{backgroundColor:'white'}}
+  
 >
-<Grid item xs={12} md={12} sx={{margin:'1%',color:'white', display: 'flex', justifyContent: 'flex-end'}}>
 
-<Link  href="/">
-<Button  style={{backgroundColor:'#0597F2',borderRadius: 5,color:'white',marginInline:'1%'}}>HOME</Button>
+
+<Grid item xs={12} md={5} sx={{margin:'1%',color:'white'}} className='NavGrid'>
+
+<Link  href="/" >
+<a onClick={() => handleClick()}>
+<div className={back === '/' ? 'button-1':'button-n'} >
+ <span style={{letterSpacing: '2px'}}> 
+ HOME
+ </span>
+  </div>
+</a>
 </Link>
 
 <Link  href="/bio2">
-<Button  style={{backgroundColor:'#05AFF2',borderRadius: 5,color:'white',marginInline:'1%'}}>BIO</Button>
+<a onClick={() => handleClick()}>
+<div className={back === '/bio2' ? 'button-1':'button-n' } >
+<span style={{letterSpacing: '2px'}}> 
+  BIO
+  </span>
+  </div>
+</a>
 </Link>
+
+
 <Link  href="/work">
-<Button  style={{backgroundColor:'#04BF8A',borderRadius: 5,color:'white',marginInline:'1%'}}>WORK</Button> 
+<div className={back === '/work' ? 'button-1':'button-n' }  >
+<span style={{letterSpacing: '2px'}}> 
+  WORK
+  </span>
+  </div>
 </Link>
 <Link  href="/blog">
-<Button  style={{backgroundColor:'#F2BD1D',borderRadius: 5,color:'white',marginInline:'1%'}}>BLOG</Button>   
+<div className={back === '/blog' ? 'button-1':'button-n' }  >
+<span style={{letterSpacing: '2px'}}> 
+  BLOG
+  </span>
+  </div>  
 </Link>
   </Grid>
 
-
-
-
+  <Grid item xs={12} md={12} sx={{margin:'1%',color:'white'}} className='BurgerGrid'>
+ <MenuIcon sx={{color:'black', fontSize:'35px'}}/>
+  </Grid>
 </Grid>
 
   )
