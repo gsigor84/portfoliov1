@@ -34,7 +34,7 @@ function handleClick(){
 
 <Grid item xs={12} md={5} sx={{margin:'1%',color:'white'}} className='NavGrid'>
 
-<Link  href="/" >
+<Link  href="/"  passHref >
 <a onClick={() => handleClick()}>
 <div className={back === '/' ? 'button-1':'button-n'} >
  <span style={{letterSpacing: '2px'}}> 
@@ -44,7 +44,7 @@ function handleClick(){
 </a>
 </Link>
 
-<Link  href="/bio2">
+<Link  href="/bio2"  passHref >
 <a onClick={() => handleClick()}>
 <div className={back === '/bio2' ? 'button-1':'button-n' } >
 <span style={{letterSpacing: '2px'}}> 
@@ -55,14 +55,14 @@ function handleClick(){
 </Link>
 
 
-<Link  href="/work">
+<Link  href="/work"  passHref >
 <div className={back === '/work' ? 'button-1':'button-n' }  >
 <span style={{letterSpacing: '2px'}}> 
   WORK
   </span>
   </div>
 </Link>
-<Link  href="/blog">
+<Link  href="/blog"  passHref >
 <div className={back === '/blog' ? 'button-1':'button-n' }  >
 <span style={{letterSpacing: '2px'}}> 
   BLOG
