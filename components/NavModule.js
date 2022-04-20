@@ -2,11 +2,14 @@ import React,{useState,useEffect} from 'react'
 import Grid from '@mui/material/Grid';
 import Link from 'next/link'
 import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
+
+
 function NavModule() {
 
 
   const [back, setBack] = useState('');
-  const [css, setcss] = useState('');
+  const [burger, setBurger] = useState(false);
 
   useEffect(() => {
   
@@ -21,6 +24,18 @@ function handleClick(){
   return setBack(win);
 }
 
+function handleBurger(){
+setBurger(!burger);
+console.log(burger)
+if (burger === true){
+  return(
+    <div className='mobileDiv'>
+      asdfasdfa
+    </div>
+  )
+}
+}
+
   return (
    
 <Grid
@@ -30,7 +45,69 @@ function handleClick(){
   alignItems="center"
   
 >
+{burger && <div className='mobileDiv'>
+  <div style={{display: 'flex',justifyContent: 'flex-end',margin:'6%'}} onClick={()=>handleBurger()}>
+    <CloseIcon/>
+  </div>
 
+<Grid
+  container
+  direction="column"
+  justifyContent="space-evenly"
+  alignItems="center"
+  className='textBurger'
+  
+>
+<Grid item xs={12} md={12} sx={{margin:'30px'}} >
+<Link  href="/"  passHref  >
+<a onClick={()=>handleBurger()}>
+<span style={{fontSize:'30px', lineHeight:1,color:'black' }}className='thin' >
+        HOME
+</span>
+</a>
+< /Link>
+</Grid>
+
+
+<Grid item xs={12} md={12} sx={{margin:'30px'}} >
+<Link  href="/bio2"  passHref >
+<a onClick={()=>handleBurger()}>
+<span style={{fontSize:'30px', lineHeight:1,color:'black' }}className='thin' >
+        BIO
+</span>
+</a>
+  < /Link>
+</Grid>
+
+
+<Grid item xs={12} md={12} sx={{margin:'30px'}} >
+  <Link  href="/work"  passHref >
+  <a onClick={()=>handleBurger()}>
+<span style={{fontSize:'30px', lineHeight:1,color:'black' }}className='thin' >
+        WORK
+</span>
+</a>
+ < /Link>
+</Grid>
+
+
+<Grid item xs={12} md={12} sx={{margin:'30px'}} >
+  <Link  href="/blog"  passHref >
+  <a onClick={()=>handleBurger()}>
+<span style={{fontSize:'30px', lineHeight:1,color:'black' }}className='thin' >
+       BLOG
+</span>
+</a>
+< /Link>
+</Grid>
+
+
+
+
+
+  </Grid>
+  
+  </div> }
 
 <Grid item xs={12} md={5} sx={{margin:'1%',color:'white'}} className='NavGrid'>
 
@@ -72,7 +149,9 @@ function handleClick(){
   </Grid>
 
   <Grid item xs={12} md={12} sx={{margin:'1%',color:'white'}} className='BurgerGrid'>
+    <a onClick={()=>handleBurger()}>
  <MenuIcon sx={{color:'black', fontSize:'35px'}}/>
+ </a>
   </Grid>
 </Grid>
 
