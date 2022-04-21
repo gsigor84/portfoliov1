@@ -25,9 +25,9 @@ sx={{paddingTop:'2%'}}
 
 </Grid>
  <Grid item xs={12} md={12} sx={{textAlign:'center'}}>
-   <Typography  variant="h2"  sx={{color:'black'}} className='subTitle1' >
+ <span style={{fontSize:'60px', lineHeight:1,color:'black' }}className='thin' >
 BLOG
-</Typography>
+</span>
 </Grid>
 
 <Box sx={{ flexGrow: 1 }}>
