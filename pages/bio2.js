@@ -17,7 +17,7 @@ function bio2() {
   justifyContent="center"
   alignItems="center"
   spacing={1}
-
+sx={{marginBottom:'8%'}}
 >
 <Grid item xs={12} md={12} className='boxBackG2'>
 

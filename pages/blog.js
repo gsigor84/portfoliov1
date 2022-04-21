@@ -1,6 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Link from 'next/link'
 import Grid from '@mui/material/Grid';
@@ -11,8 +11,8 @@ import Image from 'next/image'
 
 function blog() {
   return (
-    <Box sx={{ flexGrow: 1,backgroundColor:'#F2BD1D',marginBottom:'1%' }}>
-
+   
+<Container maxWidth="lg" sx={{marginBottom:'1%'}}>
 
  <Grid container 
 
@@ -21,9 +21,12 @@ direction="row"
   alignItems="center"
 sx={{paddingTop:'2%'}}
  >
+   <Grid item xs={12} md={12} className='boxBackG3'>
+
+</Grid>
  <Grid item xs={12} md={12} sx={{textAlign:'center'}}>
-   <Typography  variant="h2"  sx={{color:'white'}} className='subTitle1' >
-BLOG.
+   <Typography  variant="h2"  sx={{color:'black'}} className='subTitle1' >
+BLOG
 </Typography>
 </Grid>
 
@@ -79,7 +82,7 @@ spacing={2}>
 </Box>
 
  </Grid>
- </Box>
+</Container>
 
   )
 }

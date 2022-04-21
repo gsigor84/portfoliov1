@@ -43,6 +43,18 @@ a {
   height: 15vh;
   width: 100%;
 }
+.boxBackG3 {
+  background-image: url("https://images.unsplash.com/photo-1454117096348-e4abbeba002c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2602&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.6;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -2;
+  height: 100vh;
+  width: 100%;
+}
 .subTitle1 {
   font-family: "Inter";
   font-weight: 200;

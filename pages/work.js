@@ -14,7 +14,7 @@ import  Animation2 from './Animation2';
 function work() {
   return (
     
-<Box sx={{ flexGrow: 1,backgroundColor:'#04BF8A',marginBottom:'1%' }}>
+<Box sx={{ flexGrow: 1,marginBottom:'1%' }}>
 
 
  <Grid container 
@@ -25,8 +25,8 @@ direction="row"
 sx={{paddingTop:'2%'}}
  >
    <Grid item xs={12} md={12} sx={{margin:'2%',textAlign:'center'}}>
-   <Typography  variant="h2"  sx={{color:'white'}} className='subTitle1' >
-WORK.
+   <Typography  variant="h2"  sx={{color:'black'}} className='subTitle1' >
+WORK
 </Typography>
 </Grid>
 
@@ -49,19 +49,19 @@ WORK.
         {itemData.map((item,index) => (
           <Link href={item.link} key={index} >
           <a>
-         <Card sx={{ maxWidth: 345,boxShadow: "none",backgroundColor:'#04BF8A'}} className='card'>
+         <Card sx={{ maxWidth: 345,boxShadow: "none"}} className='card'>
       <CardMedia
         component="img"
-        height="140"
+        height="340"
         image={item.image}
         alt={item.title}
        
       />
       <CardContent>
-        <p  className='subTitle1' style={{color:'white',fontSize:'20px',alignSelf:'center',}}>
+        <p  className='subTitle1' style={{color:'black',fontSize:'20px',alignSelf:'center',}}>
          {item.title}
         </p>
-        <p  className='p1' style={{color:'white',fontSize:'16px'}}>
+        <p  style={{color:'black',fontSize:'16px',fontFamily:'Lato'}}>
          {item.description}
         </p>
       </CardContent>
