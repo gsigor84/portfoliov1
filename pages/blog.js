@@ -42,7 +42,7 @@ BLOG
 
 
 
-        <Grid item xs={12} md={7} >
+        <Grid item xs={10} md={7} >
 
 <Grid 
  container

@@ -260,4 +260,7 @@ a {
   .textBurger {
     margin-top: 20%;
   }
+  .workMob {
+    margin-block: 10%;
+  }
 }

@@ -24,7 +24,7 @@ direction="row"
   alignItems="center"
 sx={{paddingTop:'2%'}}
  >
-   <Grid item xs={12} md={12} sx={{margin:'2%',textAlign:'center'}}>
+   <Grid item xs={12} md={12} sx={{margin:'2%',textAlign:'center'}} className='workMob'>
    <span style={{fontSize:'60px', lineHeight:1,color:'black' }}className='thin' >
 WORK
 </span>
