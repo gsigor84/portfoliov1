@@ -1,8 +1,8 @@
 import React from 'react'
-import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Image from 'next/image'
+import { motion } from 'framer-motion';
 
 function purpose() {
 
@@ -31,9 +31,14 @@ function purpose() {
   </Grid>
 
 <Grid item xs={12}  md={6} sx={{lineHeight: 1.6}} >
+  <motion.div 
+  initial={{y:250,opacity:0}}
+  animate={{y:0,opacity:1}}
+  transition={{duration:0.5}}
+  >
 <p style={{color:'#0D0D0D',fontSize:'20px',fontWeight:'bold'}}>COMPANY PURPOSE</p>
    The purpose of a IT company is to provide information technology services to businesses and organizations. These services can include the development, implementation, and maintenance of software applications, websites, and database systems. IT companies may also provide network and security services, as well as support and training.
-  
+  </motion.div>
 </Grid>
 
 

@@ -1,10 +1,7 @@
 import Container from '@mui/material/Container';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
 import Link from 'next/link'
 import Grid from '@mui/material/Grid';
-import Animation from'./Animation'
+import { motion } from 'framer-motion';
 
 
 
@@ -25,9 +22,9 @@ justifyContent="flex-start"
  >
         <Grid item xs={12} md={12} sx={{marginTop:'15%'}} className='BioBox1'>
           <p style={{color:'#737272'}}>The future is bright with IT</p>
-        <span style={{fontSize:'60px',color:'black' }}className='thin' >
+        <motion.span animate={{fontSize:'60px',color:'black',x:0,y:100 }} transition={{duration:0.3}} className='thin' >
   Welcome to my Portfolio 
-</span>
+</motion.span>
 
 
 </Grid>

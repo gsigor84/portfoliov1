@@ -1,10 +1,10 @@
-import React,{useState,useEffect} from 'react'
 import Bio from './bio.js'
 import Grid from '@mui/material/Grid';
 import Form from './form'
 import Maps from './maps'
 import Gallery from './Gallery';
 import Purpose from'./purpose';
+import { motion } from 'framer-motion';
 
 
 export default function Home() {
@@ -17,8 +17,8 @@ export default function Home() {
 className="fullscreen"
 
 >
-<Grid item xs={12} md={12} className='boxBackG'>
-
+<Grid item xs={12} md={12} >
+<motion.div animate={{opacity: 0.6}} transition={{duration:0.5}} className='boxBackG'/>
 </Grid>
 
 
