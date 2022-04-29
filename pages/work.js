@@ -1,7 +1,6 @@
 import React from 'react'
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import Container from '@mui/material/Container';
 import Link from 'next/link'
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -13,7 +12,7 @@ import CardMedia from '@mui/material/CardMedia';
 function work() {
   return (
     
-<Box sx={{ flexGrow: 1,marginBottom:'1%' }}>
+<Container maxWidth="lg" sx={{marginBottom:'1%'}}>
 
 
  <Grid container 
@@ -79,7 +78,7 @@ WORK
 
  </Grid>
 
- </Box>
+ </Container >
 
   )
 }
